@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
+import Github from '../components/icos/Github.astro';
+import Instagram from '../components/icos/Instagram.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -13,8 +15,22 @@ import Badge from '../components/Badge.astro';
 					</a>
 					<Badge>CV</Badge></div>
 			</h1>
-			<h2 class="text-2xl opacity-80">1 ano de experiencia 
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsam cum earum, minima inventore, eum eos corrupti tempore quos veniam eius, molestiae blanditiis. Iure quasi modi odio? Laudantium, architecto debitis?</h2>
+			<h2 class="text-2xl opacity-80 text-wrap"><samp>1 ano de experiencia </samp>
+				<samp class="opacity-80 text-red-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsam cum earum, minima inventore, eum eos corrupti tempore quos veniam eius, molestiae blanditiis. Iure quasi modi odio? Laudantium</samp>, architecto debitis?
+			</h2>
+			<ul>
+				<li>
+					<a href="https://github.com/Sanchez-Santiago">
+						<Github class="w-6 h-6"></Github>
+						Github
+					</a>
+					<a href="https://www.instagram.com/chia.almacennatural_">
+					<Instagram class="w-6 h-6"/></Instagram>
+						Instagram
+					</a>
+
+				</li>
+			</ul>
 		</section>
 	</main>
 
