@@ -1,9 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
-import Github from '../components/icos/Github.astro';
+import Socialpill from '../components/Socialpill.astro';
 import Instagram from '../components/icos/Instagram.astro';
+import Mail from '../components/icos/Mail.astro';
+import Map from '../components/icos/Map.astro';
+
 ---
 
 <Layout title="Welcome to Astro.">
@@ -18,23 +20,22 @@ import Instagram from '../components/icos/Instagram.astro';
 			<h2 class="text-2xl opacity-80 text-wrap"><samp>1 ano de experiencia </samp>
 				<samp class="opacity-80 text-red-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsam cum earum, minima inventore, eum eos corrupti tempore quos veniam eius, molestiae blanditiis. Iure quasi modi odio? Laudantium</samp>, architecto debitis?
 			</h2>
-			<ul>
-				<li>
-					<a href="https://github.com/Sanchez-Santiago">
-						<Github class="w-6 h-6"></Github>
-						Github
-					</a>
-					<a href="https://www.instagram.com/chia.almacennatural_">
-					<Instagram class="w-6 h-6"/></Instagram>
-						Instagram
-					</a>
-
-				</li>
-			</ul>
+			<nav class="flex gap-x-2">
+				<Socialpill href="https://www.instagram.com/chia.almacennatural_">
+						<Instagram class="h-6 w-6"></Instagram>
+						Instagram	
+				</Socialpill>
+				<Socialpill href="https://maps.app.goo.gl/aeHdJ25pZehEj4Pe8">
+						<Map class="h-6 w-6"></Map>
+						Ubicacion
+				</Socialpill>
+				<Socialpill href="https://mail.google.com/mail/u/1/#inbox">
+					<Mail class="h-6 w-6"></Mail>
+					Mail
+				</Socialpill>
+			</nav>
 		</section>
 	</main>
 
 </Layout>
 
-
-</style>
